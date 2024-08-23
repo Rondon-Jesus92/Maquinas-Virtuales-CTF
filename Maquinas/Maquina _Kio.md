@@ -11,7 +11,7 @@ Ejecutamos el siguiente comando para verificar si el servicio samba esta activo
 ### Resumen de la información obtenida
 
 |IP             | Sistema OPerativo | Puertos/Servicios                | Usuario       |
-| :------------ |:-----------------:| :-------------------------------:| -------------:| 
+|:------------: |:-----------------:| :-------------------------------:| -------------:| 
 | 192.168.1.15  | Red hat/Linux     | 22/tcp ssh OpenSSh 2.9p2         |  KIO-KID      | 
 |               |                   | 80/tcp http Apache 1.3.20        |               | 
 |               |                   | 111/tcp rpcbind                  |               | 
