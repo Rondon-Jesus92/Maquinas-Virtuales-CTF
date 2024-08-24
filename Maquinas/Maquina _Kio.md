@@ -1,4 +1,4 @@
-## 1.Reconocmiento
+## 1.Reconocmiento / Análisis de Vulnerabilidades / Debilidades
 
 Comenzamos realizando un escaneo general con nmap sobre la IP de la máquina víctima para ver que puertos tiene abiertos.
 
@@ -7,6 +7,20 @@ Comenzamos realizando un escaneo general con nmap sobre la IP de la máquina ví
 Ejecutamos el siguiente comando para verificar si el servicio samba esta activo
 
 [![reconocimiento2.jpg](https://i.postimg.cc/jjPTwW1v/reconocimiento2.jpg)](https://postimg.cc/DWvHRznb)
+
+Ejecutamos msfconsole para utilizar un auxiliar que nos va permitir saber que version del servicio samba que esta ejecutando
+
+[![reconocmiento3.jpg](https://i.postimg.cc/0jV4rZtS/reconocmiento3.jpg)](https://postimg.cc/30D1cjQr)
+
+Una vez iniciado msfconsole buscamos el auxiliar con el comando **search smb_version**
+
+[![reconocmiento4.jpg](https://i.postimg.cc/gkwsvYjQ/reconocmiento4.jpg)](https://postimg.cc/ppHKvMDJ)
+
+Luego ejecutamos el comando **set rhost 192.168.1.15** que seria la direccion IP de la maquina victima donde vamos a buscar el servicio, verificamos que se haya realizado el cambio con show options y procedemos a ejecutar con el comando exploit 💣 
+
+[![reconocimiento5.jpg](https://i.postimg.cc/8CGbQM4g/reconocimiento5.jpg)](https://postimg.cc/YvXFQ4Td)
+
+Ya una vez obtinida la version del samba vamos a buscar con el comando **searchsploit samba2.2** el exploit que vamos a usar, en este caso usaremos uno que se encuentra en Metasploit que se llama ' **trans2open** ' para (**Linux x86**) 
 
 ### Resumen de la información obtenida
 
@@ -20,5 +34,17 @@ Ejecutamos el siguiente comando para verificar si el servicio samba esta activo
 |               |                   | 1024/tcp kdm                     |               |
 
 
-## 2. Análisis de Vulnerabilidades/Debilidades
+## 2.Explotación
+
+Ya con la recopilación obtenida procedemos abrir nuevamente el metasploit y buscamos el exploit **trans2open** 
+
+[![explotacion.jpg](https://i.postimg.cc/y6fBDT3n/explotacion.jpg)](https://postimg.cc/Rqn28KRn)
+
+utilizamos el comando **use 1** para selecionar el exploit, una vez seleccionado ejecutamos el coando **show options** para verificar los parametros que nos hacen falta, colocamos la ip de la maquina victima con el comando **set rhost 192.168.1.15**
+
+Ahora toca cambiar el payload con el comando **show payloads** y te saldra un lista de todos los payloads disponibles
+
+[![explotacion2.jpg](https://i.postimg.cc/q7k4tDwb/explotacion2.jpg)](https://postimg.cc/YvyJZ3JY)
+
+
 
