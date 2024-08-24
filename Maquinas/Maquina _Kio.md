@@ -6,6 +6,13 @@ Enlace a la Maquina --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF
 
 Instrucciones --> **Se necesita instalar VMawre Workstation para poder virtualizar la maquina**
 
+'
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'
+
 ## 1.Reconocmiento / Análisis de Vulnerabilidades / Debilidades
 
 Comenzamos realizando un escaneo general con nmap sobre la IP de la máquina víctima para ver que puertos tiene abiertos.
