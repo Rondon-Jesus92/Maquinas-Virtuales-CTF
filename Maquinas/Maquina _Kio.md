@@ -1,6 +1,7 @@
 #MAQUINA KIO
 
 ###Dificultad --> Easy
+
 ###Enlace a la Maquina --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF/blob/main/Maquinas/Kio-VMware.zip
 
 ## 1.Reconocmiento / Análisis de Vulnerabilidades / Debilidades
