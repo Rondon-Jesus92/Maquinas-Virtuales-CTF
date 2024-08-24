@@ -1,8 +1,10 @@
-#MAQUINA KIO
+# MAQUINA KIO
 
-###Dificultad --> Easy
+Dificultad --> Easy
 
-###Enlace a la Maquina --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF/blob/main/Maquinas/Kio-VMware.zip
+Enlace a la Maquina --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF/blob/main/Maquinas/Kio-VMware.zip
+
+Instrucciones --> **Se necesita instalar VMawre Workstation para poder virtualizar la maquina**
 
 ## 1.Reconocmiento / Análisis de Vulnerabilidades / Debilidades
 
