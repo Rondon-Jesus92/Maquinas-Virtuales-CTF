@@ -61,5 +61,20 @@ Ahora toca cambiar el payload con el comando -->**show payloads**<-- y te saldra
 
 [![explotacion2.jpg](https://i.postimg.cc/q7k4tDwb/explotacion2.jpg)](https://postimg.cc/YvyJZ3JY)
 
+Procedemos a ejecutar el exploit 💣 y obtenemos acceso 
+
+[![explotacion3.jpg](https://i.postimg.cc/kMzHyQhn/explotacion3.jpg)](https://postimg.cc/qgcQJ3TY)
+
+Ya una vez obtenido los privilegios como root procedemos ubicarnos en el directorio raiz para realizar una busqueda de las bandera con el siguiente comando --> **find / -name bandera*.txt 2>/dev/null** <--
+
+El cual nos dara cada una de las ruta donde se encuentras las 3 banderas 🚩
+
+[![bandera.jpg](https://i.postimg.cc/L4cyPHn5/bandera.jpg)](https://postimg.cc/LhVBKFkF)
+
+
+|Bandera 1 | 684d0624c19cac22a44a8413795368b9 |
+|:--------:|:--------------------------------:|
+|Bandera 2 | c9b2db2dbe3d8e65485c6c348785a760 |
+|Bandera 3 | 9699a2a93f0d7eeb172dca2de51d3db2 | 
 
 
