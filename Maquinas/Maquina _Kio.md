@@ -71,6 +71,7 @@ El cual nos dara cada una de las ruta donde se encuentras las 3 banderas 🚩
 
 [![bandera.jpg](https://i.postimg.cc/L4cyPHn5/bandera.jpg)](https://postimg.cc/LhVBKFkF)
 
+## 3. Banderas
 
 |Bandera 1 | 684d0624c19cac22a44a8413795368b9 |
 |:--------:|:--------------------------------:|
