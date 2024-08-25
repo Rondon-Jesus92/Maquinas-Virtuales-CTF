@@ -55,7 +55,7 @@ Ya con la recopilación obtenida procedemos abrir nuevamente el metasploit y bus
 
 [![explotacion.jpg](https://i.postimg.cc/y6fBDT3n/explotacion.jpg)](https://postimg.cc/Rqn28KRn)
 
-utilizamos el comando -->**use 1**<-- para selecionar el exploit, una vez seleccionado ejecutamos el comando --> **show options**<-- para verificar los parametros que nos hacen falta, colocamos la ip de la maquina victima con el comando -->**set rhost 192.168.1.15**
+Utilizamos el comando -->**use 1**<-- para selecionar el exploit, una vez seleccionado ejecutamos el comando --> **show options**<-- para verificar los parametros que nos hacen falta, colocamos la ip de la maquina victima con el comando -->**set rhost 192.168.1.15**
 
 Ahora toca cambiar el payload con el comando -->**show payloads**<-- y te saldra un lista de todos los payloads disponibles, nosotros vamos utilizar el N° 33
 
@@ -63,9 +63,9 @@ Ahora toca cambiar el payload con el comando -->**show payloads**<-- y te saldra
 
 Procedemos a ejecutar el exploit 💣 y obtenemos acceso 
 
-[![explotacion3.jpg](https://i.postimg.cc/kMzHyQhn/explotacion3.jpg)](https://postimg.cc/qgcQJ3TY)
+[![explotacion3.jpg](https://i.postimg.cc/RhSZpr0H/explotacion3.jpg)](https://postimg.cc/N9ntLzms)
 
-Ya una vez obtenido los privilegios como root procedemos ubicarnos en el directorio raiz para realizar una busqueda de las bandera con el siguiente comando --> **find / -name bandera*.txt 2>/dev/null** <--
+Ya una vez obtenido los privilegios como root procedemos ubicarnos en el directorio raiz para realizar una busqueda de las bandera con el siguiente comando --> find / -name bandera*.txt 2>/dev/null <--
 
 El cual nos dara cada una de las ruta donde se encuentras las 3 banderas 🚩
 
