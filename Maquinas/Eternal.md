@@ -1,13 +1,17 @@
 # Maquina Eternal
 
-**Dificultad:** Facil
+Dificultad --> Facil
 
-**Enlace de la maquina** --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF/blob/main/Descarga-de-Maquinas/eternal-VMware.zip
+Enlace de la maquina --> https://github.com/Rondon-Jesus92/Maquinas-Virtuales-CTF/blob/main/Descarga-de-Maquinas/eternal-VMware.zip
 
-**Instrucciones** --> Se necesita instalar VMawre Workstation para poder virtualizar la maquina
+Instrucciones --> Se necesita instalar VMawre Workstation para poder virtualizar la maquina
+
 '
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 '
+
 ## 1.Reconocmiento
 
 Utilizamos el comando **--> sudo arp-scan -l <--** para encontrar la dirección IP de la Maquina 💻 victima
@@ -64,13 +68,15 @@ Conseguimos unas credenciales encriptadas las cuales la podemos decifrar en dife
 
 Ya tenemos la contraseña del usuario **Hacker Mentor User** y del usuario **Hacker Mentor Admin**, podemos acceder a cada uno de los usuario y en el escritorio vamos a conseguir la **Bandera1** y la **Bandera2**
 
-#### Accediendo al usuario Hacker Mentor User
+### Accediendo al usuario Hacker Mentor User
 
 [![bandera1.jpg](https://i.postimg.cc/W36Ctbkq/bandera1.jpg)](https://postimg.cc/vgT3NyXG)
 
-#### Accediendo al usuario Hacker Mentor Admin
+
+### Accediendo al usuario Hacker Mentor Admin
 
 [![bandera2.jpg](https://i.postimg.cc/wMwrcfF6/bandera2.jpg)](https://postimg.cc/30D93ZP6)
+
 
 ## 4.Banderas
 
