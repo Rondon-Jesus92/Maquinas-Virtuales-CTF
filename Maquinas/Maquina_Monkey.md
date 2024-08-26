@@ -46,3 +46,23 @@ Nos podemos fijar que hay un login por ftp de manera anónima y que tenemos un a
 |               |                   | 80/tcp apache httpd 2.4.38                 |
 
 
+
+## 2. Análisis de Vulnerabilidades / Debilidades
+
+Nos conectamos mediante ftp a la máquina, colocamos usuario anonymous y la clave igual anonymous
+
+[![analisis.jpg](https://i.postimg.cc/bNLp7Xjy/analisis.jpg)](https://postimg.cc/RN3ktDFy)
+
+
+Buscamos el archivo notas.txt y vemos su contenido
+
+
+[![analisis2.jpg](https://i.postimg.cc/jSSttRHg/analisis2.jpg)](https://postimg.cc/56TZmdkL)
+
+
+## 3. Explotación
+
+
+Deciframos la credencial obtenida en el archivo notas.txt
+
+[![explotacion.jpg](https://i.postimg.cc/yNFHTWsN/explotacion.jpg)](https://postimg.cc/675gWW7s)
