@@ -16,8 +16,8 @@ Instrucciones --> Se necesita instalar VMawre Workstation para poder virtualizar
 
 Utilizamos el comando **--> sudo arp-scan -l <--** para encontrar la dirección IP de la máquina 💻 victima
 
-[![reconocimiento.jpg](https://i.postimg.cc/4drQ4Fkn/reconocimiento.jpg)](https://postimg.cc/gXHZNs0P)
 
+[![reconocimiento.jpg](https://i.postimg.cc/4drQ4Fkn/reconocimiento.jpg)](https://postimg.cc/gXHZNs0P)
 
 Escaneando puertos y sus versiones utilizando el comando **nmap** con diferentes parámetros a la IP que conseguimos 🔎
 
@@ -26,7 +26,6 @@ Escaneando puertos y sus versiones utilizando el comando **nmap** con diferentes
 
 
 [![reconocimiento3.jpg](https://i.postimg.cc/bwprc0MP/reconocimiento3.jpg)](https://postimg.cc/CzrSb8Sr)
-
 
 Convertimos el archivo que se nos genero para visualizarlo mejor con el siguiente comando **--> xsltproc nmap-results.xml -o nmap-results.html <--** y luego lo abrimos con el navegador
 
@@ -59,10 +58,73 @@ Buscamos el archivo notas.txt y vemos su contenido
 
 [![analisis2.jpg](https://i.postimg.cc/jSSttRHg/analisis2.jpg)](https://postimg.cc/56TZmdkL)
 
-
 ## 3. Explotación
 
 
-Deciframos la credencial obtenida en el archivo notas.txt
+Deciframos la credencial obtenida en el archivo notas.txt en la pagina **crackstation** 
 
 [![explotacion.jpg](https://i.postimg.cc/yNFHTWsN/explotacion.jpg)](https://postimg.cc/675gWW7s)
+
+
+Realizamos una enumeración de directorios con gobuster
+
+[![explotacion2.jpg](https://i.postimg.cc/HL0qyK9c/explotacion2.jpg)](https://postimg.cc/JynYwpgM)
+
+
+Descargamos la base de datos
+
+[![explotacion3.jpg](https://i.postimg.cc/HsJF2jtC/explotacion3.jpg)](https://postimg.cc/RNBPCS8P)
+
+
+Recopilamos información dentro de la base de datos
+
+[![explotacion4.jpg](https://i.postimg.cc/zfkQBhqT/explotacion4.jpg)](https://postimg.cc/3yd1fd4w)
+
+
+Procedemos a cifrar la credencial obtenida de la base de datos en la pagina **crackstation**
+
+[![explotacion5.jpg](https://i.postimg.cc/59rR6bWK/explotacion5.jpg)](https://postimg.cc/F1jZ6tR0)
+
+
+Accedemos a uno de los directorios obtenidos 192.168.1.18/monkey/index.php y utilizamos las credenciales obtenidas
+
+[![explotacion6.jpg](https://i.postimg.cc/ZYv1PCHz/explotacion6.jpg)](https://postimg.cc/w3Hfgxnw)
+
+Ingresamos el Pincode que es **777777**  
+
+Creamos un script para una shell reverse y modificamos la dirección IP y el puerto que vamos a utilizar
+
+[![explotacion7.jpg](https://i.postimg.cc/yYyB9D6Y/explotacion7.jpg)](https://postimg.cc/QHCRZxWR)
+
+
+Ya que pudimos ingresar a la pagina con las credenciales obtenidas vamos a subir al servidor nuestra Shell reverse
+
+[![explotacion8.jpg](https://i.postimg.cc/9MLZrm4x/explotacion8.jpg)](https://postimg.cc/62GyPNfR)
+
+Colocamos nuestro equipo al modo escucha con el comando nc -lvnp 9001 y luego procedemos a ejecutar nuestro reserve shell que subimos a la pagina lo cual nos dará un ingreso
+
+[![explotacion9.jpg](https://i.postimg.cc/CLGDqsfB/explotacion9.jpg)](https://postimg.cc/kB5Br8sq)
+
+Activamos todo el esquema de nuestra shell con los siguientes comandos:
+
+**echo $TERM dumb**
+
+**echo $SHELL /usr/sbin/nologin**
+
+**TERM=xterm**
+
+**SHELL=bash**
+
+Seguimos recopilando información utilizando el comando **--> grep -r password<--**. El cual nos ayudara a conseguir otra credencial
+
+[![explotacion10.jpg](https://i.postimg.cc/sDTjqMkH/explotacion10.jpg)](https://postimg.cc/rKt2twF5)
+
+
+Esta contraseña pertenece al usuario hackermentor, lo podemos comprobar usando la herramienta “**crackmapexec**”. Ahora nos vamos a conectar mediante ssh 
+
+[![explotacion11.jpg](https://i.postimg.cc/mDSf9qRp/explotacion11.jpg)](https://postimg.cc/qhg5V1N2)
+
+
+Una vez obtenido el acceso ejecutamos el comando ls , tenemos la primera bandera 🚩 ejecutamos el comando cat para ver su contenido 
+
+[![bandera1.jpg](https://i.postimg.cc/Jhb9wgy7/bandera1.jpg)](https://postimg.cc/Lq8yLxBG)
