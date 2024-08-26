@@ -128,3 +128,37 @@ Esta contraseña pertenece al usuario hackermentor, lo podemos comprobar usando 
 Una vez obtenido el acceso ejecutamos el comando ls , tenemos la primera bandera 🚩 ejecutamos el comando cat para ver su contenido 
 
 [![bandera1.jpg](https://i.postimg.cc/Jhb9wgy7/bandera1.jpg)](https://postimg.cc/Lq8yLxBG)
+
+## 4. Escalación de privilegios
+
+Ahora vamos a buscar la manera de escalar privilegios, primero buscamos en nuestra máquina una herramienta que se llama Linpeas.sh, algunas Kali ya la traen sino la puedes descargar ⬇️ en Github. Nos situamos en el directorio donde tenemos el archivo Linpeas.sh y procedemos a colocar nuestra máquina como servidor para luego descargar ⬇️ ese archivo en la máquina victima 💻 
+
+[![escalar.jpg](https://i.postimg.cc/0rRYqtKx/escalar.jpg)](https://postimg.cc/m1jzYyS6)
+
+
+Ejecutamos el linpeas.sh en la máquina victima 💻, el cual hará un análisis del equipo arrojando mucha información que la clasifica por color, conseguimos algunos UID que nos podemos aprovechar para escalar privilegios
+
+[![escalar2.jpg](https://i.postimg.cc/BQbbq5Bf/escalar2.jpg)](https://postimg.cc/QHLhmTzf)
+
+
+Editamos el archivo Backup.sh agregando **chmod +s /bin/bash** para obtener permisos SUID
+
+[![escalar3.jpg](https://i.postimg.cc/L5qcWsLw/escalar3.jpg)](https://postimg.cc/fSNqtDHf)
+
+
+Ejecutamos los siguientes comandos y logramos tener acceso como root
+
+[![escalar4.jpg](https://i.postimg.cc/gk3zcML5/escalar4.jpg)](https://postimg.cc/cr4yXBmM)
+
+
+Buscamos la badera 2 🚩 que se encuentra en el directorio root y vemos su contenido con el comando cat
+
+[![bandera2.jpg](https://i.postimg.cc/28dYNVPN/bandera2.jpg)](https://postimg.cc/N50S1fsd)
+
+
+## 5. Banderas 🏁
+
+|Bandera 1 | 47ee0702e489445bae251df46bc88b73 |
+|:--------:|:--------------------------------:|
+|Bandera 2 | D844ce556f834568a3ffe8c219d73368 |
+
