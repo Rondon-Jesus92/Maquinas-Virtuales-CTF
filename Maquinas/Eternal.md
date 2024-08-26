@@ -27,7 +27,7 @@ Escaneando puertos y sus versiones utilizando el comando **nmap** con diferentes
 [![reconocimiento3.jpg](https://i.postimg.cc/X77qjrCF/reconocimiento3.jpg)](https://postimg.cc/8s9NwPwP)
 
 
-Convertimos el archivo que se nos genero para visualizarlo mejor con el siguiente comando **--> xsltproc blue-nmap-results.xml -o xsltproc blue-nmap-results.html <--** y luego lo abrimos con el navegador
+Convertimos el archivo que se nos genero para visualizarlo mejor con el siguiente comando **--> xsltproc blue-nmap-results.xml -o blue-nmap-results.html <--** y luego lo abrimos con el navegador
 
 
 [![reconocimiento4.jpg](https://i.postimg.cc/rFnmKq1H/reconocimiento4.jpg)](https://postimg.cc/Xp53PSDK)
