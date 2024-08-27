@@ -64,13 +64,24 @@ Tenemos abierto el puerto 8080 realizamos igual un fuzzing pero agregando este p
 [![analisis3.jpg](https://i.postimg.cc/J0Bv0Trt/analisis3.jpg)](https://postimg.cc/CnSm6sfV)
 
 
-Una vez realizado el fuzzing accedemos a uno de los directorios que nos consiguió **/app**, **buscamos en el archivo config-cache.json** y encontraremos una contraseña 🔑
+Una vez realizado el fuzzing accedemos a uno de los directorios que nos consiguió **192.168.1.22/app**, **buscamos en el archivo config-cache.json** y encontraremos una contraseña 🔑
 
 
 [![analisis2.jpg](https://i.postimg.cc/3xZ6k0Tj/analisis2.jpg)](https://postimg.cc/w17FPv33)
 
 
 
+## 3. Explotación
 
+El otro directorio que vamos abrir es el **192.168.1.22:8080/dev** y encontramos que hay una pagina web en **Boltwire**, podemos buscar haber si encontramos una vulnerabilidad para **Boltwire**
+
+
+[![explotacion.jpg](https://i.postimg.cc/7PJmkfYL/explotacion.jpg)](https://postimg.cc/jCKz6qfV)
+
+
+Buscando la vulnerabilidad en la pagina exploit db
+
+
+[![explotacion2.jpg](https://i.postimg.cc/CKZfqn2B/explotacion2.jpg)](https://postimg.cc/DWTZV0nn)
 
 
