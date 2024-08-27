@@ -89,10 +89,35 @@ Abrimos en el navegador la vulnerabilidad que conseguimos del directorio /index.
 
 Conseguimos un usuario llamado jeanpaul
 
-[![explotacion3.jpg](https://i.postimg.cc/t4sMY29h/explotacion3.jpg)](https://postimg.cc/3kHBqj4R)
+[![explotacion3.jpg](https://i.postimg.cc/VN6nYV18/explotacion3.jpg)](https://postimg.cc/5Xh6gp67)
 
 
 Creamos una carpeta que se llame montaje, nos situamos en ella y procedemos a realizar un montaje de tipo NFS
 
 
 [![explotacion4.jpg](https://i.postimg.cc/xCZkTf5G/explotacion4.jpg)](https://postimg.cc/S2WQgpwj)
+
+
+Se crackea utilizando fuerza bruta en el archivo save.zip con la ayuda de la herramienta🛠️ fcrackzip
+
+
+[![explotacion5.jpg](https://i.postimg.cc/c1QgNSY3/explotacion5.jpg)](https://postimg.cc/V5kLj2Ks)
+
+
+Con la credencial🔑 obtenida procedemos a descomprimir el archivo save.zip, nos genera 3 archivos, bandera1🚩, id_rsa y todo.txt
+
+[![explotacion6.jpg](https://i.postimg.cc/NMvsNKdz/explotacion6.jpg)](https://postimg.cc/zLpYvGZC)
+
+
+Vemos el contenido de la bandera1 🚩
+
+[![bandera1.jpg](https://i.postimg.cc/tgWyVX9t/bandera1.jpg)](https://postimg.cc/7CHjFrGf)
+
+
+Ahora con el archivo id_rsa que se nos descargo le vamos a dar permisos de ejecución y procedemos a ejecutarlo
+
+
+[![explotacion7.jpg](https://i.postimg.cc/nhQf6H9b/explotacion7.jpg)](https://postimg.cc/FYm6SXxD)
+
+
+
