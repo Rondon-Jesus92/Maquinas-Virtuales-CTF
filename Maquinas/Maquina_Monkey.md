@@ -8,7 +8,7 @@ Instrucciones --> Se necesita instalar VMawre Workstation para poder virtualizar
 
 '
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 '
 
@@ -27,7 +27,7 @@ Escaneando puertos y sus versiones utilizando el comando **nmap** con diferentes
 
 [![reconocimiento3.jpg](https://i.postimg.cc/bwprc0MP/reconocimiento3.jpg)](https://postimg.cc/CzrSb8Sr)
 
-Convertimos el archivo que se nos genero para visualizarlo mejor con el siguiente comando **--> xsltproc nmap-results.xml -o nmap-results.html <--** y luego lo abrimos con el navegador
+Convertimos el archivo que se nos genero para poder visualizarlo mejor con el siguiente comando **--> xsltproc nmap-results.xml -o nmap-results.html <--** y luego lo abrimos con el navegador
 
 
 [![reconocimiento4.jpg](https://i.postimg.cc/wTxZC7VP/reconocimiento4.jpg)](https://postimg.cc/ThStm2Bq)
