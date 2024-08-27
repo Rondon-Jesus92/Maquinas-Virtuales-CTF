@@ -85,3 +85,14 @@ Buscando la vulnerabilidad en la pagina exploit db
 [![explotacion2.jpg](https://i.postimg.cc/CKZfqn2B/explotacion2.jpg)](https://postimg.cc/DWTZV0nn)
 
 
+Abrimos en el navegador la vulnerabilidad que conseguimos del directorio /index.php?p=action.search&action=../../../../../../../etc/passwd esto lo vamos agregar después del directorio /dev/
+
+Conseguimos un usuario llamado jeanpaul
+
+[![explotacion3.jpg](https://i.postimg.cc/t4sMY29h/explotacion3.jpg)](https://postimg.cc/3kHBqj4R)
+
+
+Creamos una carpeta que se llame montaje, nos situamos en ella y procedemos a realizar un montaje de tipo NFS
+
+
+[![explotacion4.jpg](https://i.postimg.cc/xCZkTf5G/explotacion4.jpg)](https://postimg.cc/S2WQgpwj)
