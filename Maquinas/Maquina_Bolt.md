@@ -120,4 +120,30 @@ Ahora con el archivo id_rsa que se nos descargo le vamos a dar permisos de ejecu
 [![explotacion7.jpg](https://i.postimg.cc/nhQf6H9b/explotacion7.jpg)](https://postimg.cc/FYm6SXxD)
 
 
+ Nos logramos conectar al servidor, hacemos un ls y tenemos la bandera2 🚩
 
+ [![bandera2.jpg](https://i.postimg.cc/N07ScLgV/bandera2.jpg)](https://postimg.cc/bGr30ySH)
+
+
+ Necesitamos saber el sistema operativo y su versión para ejecutar la herramienta Linpeas para escalar privilegios 
+
+
+[![escalar.jpg](https://i.postimg.cc/Mpt3PNd2/escalar.jpg)](https://postimg.cc/hXz0hCkp)
+
+
+Ahora nos situamos en nuestra maquina 🖥️ en el directorio donde tenemos el Linpeas descargado para la versión Linux_amd64 y colocamos nuestro equipo como servidor para realizar la descarga en el equipo victima 💻
+
+
+[![escalar2.jpg](https://i.postimg.cc/8PzZFtTZ/escalar2.jpg)](https://postimg.cc/WtxGCmFZ)
+
+
+Le damos permiso de ejecución y lo ejecutamos
+
+
+[![escalar3.jpg](https://i.postimg.cc/4xrPSGV0/escalar3.jpg)](https://postimg.cc/rDN5DvhG)
+
+
+Encontramos que para ejecutar el zip no necesita password
+
+
+[![escalar4.jpg](https://i.postimg.cc/9FkYD28f/escalar4.jpg)](https://postimg.cc/jLz71prV)
