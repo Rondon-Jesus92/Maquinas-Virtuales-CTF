@@ -131,7 +131,7 @@ Ahora con el archivo id_rsa que se nos descargo le vamos a dar permisos de ejecu
 [![escalar.jpg](https://i.postimg.cc/Mpt3PNd2/escalar.jpg)](https://postimg.cc/hXz0hCkp)
 
 
-Ahora nos situamos en nuestra maquina 🖥️ en el directorio donde tenemos el Linpeas descargado para la versión Linux_amd64 y colocamos nuestro equipo como servidor para realizar la descarga en el equipo victima 💻
+Ahora nos situamos en nuestra máquina 🖥️ en el directorio donde tenemos el Linpeas descargado para la versión Linux_amd64 y colocamos nuestro equipo como servidor para realizar la descarga en el equipo victima 💻
 
 
 [![escalar2.jpg](https://i.postimg.cc/8PzZFtTZ/escalar2.jpg)](https://postimg.cc/WtxGCmFZ)
@@ -147,3 +147,57 @@ Encontramos que para ejecutar el zip no necesita password
 
 
 [![escalar4.jpg](https://i.postimg.cc/9FkYD28f/escalar4.jpg)](https://postimg.cc/jLz71prV)
+
+
+## 4. Escalación de privilegios
+
+Procedemos a ejecutar el siguiente comando
+
+
+[![escalar5.jpg](https://i.postimg.cc/8C4FrBpb/escalar5.jpg)](https://postimg.cc/944X69q4)
+
+
+Extraemos el archivo root.zip
+
+
+[![escalar6.jpg](https://i.postimg.cc/sDfV0QrM/escalar6.jpg)](https://postimg.cc/6TSJ8QTK)
+
+
+Vamos a la pagina https://gtfobins.github.io/gtfobins/zip/#sudo, buscamos zip y ejecutamos los comando que nos indica para poder escalar privilegios como root. Una vez como root accedemos a /root y tenemos la bandera3 🚩
+
+
+[![bandera3.jpg](https://i.postimg.cc/gjQNRLyg/bandera3.jpg)](https://postimg.cc/FkbyXRBS)
+
+
+## 4.Banderas 🏁
+
+|Bandera 1 | aa7153d8889e1efd2bd57dab46e528e5 |
+|:--------:|:--------------------------------:|
+|Bandera 2 | 2d1b15dceeaf04a2a6314135f845dee77|
+|Bandera 3 | 3c14d6f8ee4c66f8c4d9569b3101605a |
+
+
+## 5.Extra 🚨
+
+
+### Persistencia
+
+
+Generamos llaves Id_rsa o llaves ssh
+
+
+[![persistencia.jpg](https://i.postimg.cc/QC2JVGsP/persistencia.jpg)](https://postimg.cc/dZ9ySfhm)
+
+
+Descargamos de nuestra máquina hacia la maquina victima el archivo id_ed25519.pub y la renombramos como authorized_keys
+
+
+[![persistencia2.jpg](https://i.postimg.cc/7PdFS5Lv/persistencia2.jpg)](https://postimg.cc/G9PgChYz)
+
+
+Procedemos a conectarnos con nuestra llave 🔑 y tenemos privilegios root
+
+
+[![persistencia3.jpg](https://i.postimg.cc/fRh1g1XB/persistencia3.jpg)](https://postimg.cc/ykvfDQLZ)
+
+
