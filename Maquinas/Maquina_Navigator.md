@@ -138,6 +138,45 @@ Nos conectamos mediante ssh con el usuario y contraseña obtenidos
 [![explotacion8.jpg](https://i.postimg.cc/v8SycsnZ/explotacion8.jpg)](https://postimg.cc/Sj83vHVB)
 
 
-Obtenemos el contenido de la bandera1 🚩
+Obtenemos el contenido de la bandera 1 🚩
 
 [![bandera1.jpg](https://i.postimg.cc/gkCPHHN9/bandera1.jpg)](https://postimg.cc/Ln37Hfcv)
+
+
+## 4. Escalación de privilegios
+
+
+Ejecutamos el siguiente comando y colocamos nuestro equipo con server para descargar en la maquina victima el archivo de linpeas
+
+
+[![escalacion.jpg](https://i.postimg.cc/xqrFMtYt/escalacion.jpg)](https://postimg.cc/1VHHZ08q)
+
+
+Ejecutamos Linpeas y vemos que tenemos un binario por el cual podemos escalar privilegios 
+
+
+[![escalacion3.jpg](https://i.postimg.cc/fWvKKzCM/escalacion3.jpg)](https://postimg.cc/V5dnsc2h)
+
+
+Realizamos la descarga ⬇️ y le damos permisos de ejecución
+
+[![escalacion2.jpg](https://i.postimg.cc/bYGy0rpt/escalacion2.jpg)](https://postimg.cc/c6SG0sKx)
+
+
+Buscamos en la pagina GTFObins como escalar privilegios por php 
+
+
+[![escalacion4.jpg](https://i.postimg.cc/d1wCkCzr/escalacion4.jpg)](https://postimg.cc/f3qy1VWR)
+
+
+Escalamos como root ejecutando los comandos que se nos indica y vemos el contenido de la bandera 2 🚩
+
+[![bandera2.jpg](https://i.postimg.cc/LsR5NpNM/bandera2.jpg)](https://postimg.cc/WdWs1xB9)
+
+
+## 4.Banderas 🏁
+
+|Bandera 1 | 19019f428f02d94f958b9f709732a51e |
+|:--------:|:--------------------------------:|
+|Bandera 2 | e3b9c48f529685a5fca3e8a5d7d27e0a |
+
