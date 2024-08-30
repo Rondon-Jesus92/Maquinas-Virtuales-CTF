@@ -60,3 +60,31 @@ Ahora en el archivo vamos agregar 192.168.0.14 (un espacio el cual nos vamos a c
 
 [![analisis2.jpg](https://i.postimg.cc/1X9jjtyr/analisis2.jpg)](https://postimg.cc/sQNmB3QM)
 
+
+Procedemos a realizar un fuzzing a la dirección navigator.hm
+
+[![analisis3.jpg](https://i.postimg.cc/pTXjchmZ/analisis3.jpg)](https://postimg.cc/v1kDcmLg)
+
+
+[![analisis4.jpg](https://i.postimg.cc/d0v1V6Km/analisis4.jpg)](https://postimg.cc/4YLZ8zym)
+
+
+## 3. Explotación
+
+Abrimos Metasploit con el comando  **msfconsole**  y buscamos un exploit para la versión Navigate CMS v2.8
+
+[![explotacion.jpg](https://i.postimg.cc/BnfYtL7B/explotacion.jpg)](https://postimg.cc/8jwB05S7)
+
+
+En este caso vamos a utilizar la opción n°3 y le damos show options para ver que parámetro nos faltan modificar
+
+
+[![explotacion2.jpg](https://i.postimg.cc/L8r1mLym/explotacion2.jpg)](https://postimg.cc/qNxRLhVF)
+
+
+Modificamos el RHOTS, en este caso no se coloca la dirección IP sino el dns que seria navigator.hm ya que lo estamos resolviendo de forma interna y procedemos a darle run para ejecutarlo.
+
+
+[![explotacion3.jpg](https://i.postimg.cc/2y8q0w57/explotacion3.jpg)](https://postimg.cc/TLFYwngK)
+
+
