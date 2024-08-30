@@ -58,8 +58,7 @@ Ya que conseguimos que si hay un dns vamos a editar 📝 el siguiente archivo pa
 
 Ahora en el archivo vamos agregar 192.168.0.14 (un espacio el cual nos vamos a copiar exactamente del que esta arriba ) y navigator.hm, aquí lo que queremos decir es si preguntan por navigator.hm me la vas a resolver a la dirección 192.168.0.14
 
-[![analisis2.jpg](https://i.postimg.cc/1X9jjtyr/analisis2.jpg)](https://postimg.cc/sQNmB3QM)
-
+[![analisis2.jpg](https://i.postimg.cc/N0YqWG3p/analisis2.jpg)](https://postimg.cc/mPd5942H)
 
 Procedemos a realizar un fuzzing a la dirección navigator.hm
 
@@ -71,7 +70,7 @@ Procedemos a realizar un fuzzing a la dirección navigator.hm
 
 ## 3. Explotación
 
-Abrimos Metasploit con el comando  **msfconsole**  y buscamos un exploit para la versión Navigate CMS v2.8
+Abrimos Metasploit con el comando -->**msfconsole**<-- y buscamos un exploit para la versión Navigate CMS v2.8
 
 [![explotacion.jpg](https://i.postimg.cc/BnfYtL7B/explotacion.jpg)](https://postimg.cc/8jwB05S7)
 
@@ -88,3 +87,57 @@ Modificamos el RHOTS, en este caso no se coloca la dirección IP sino el dns que
 [![explotacion3.jpg](https://i.postimg.cc/2y8q0w57/explotacion3.jpg)](https://postimg.cc/TLFYwngK)
 
 
+Ahora solo por comodidad de nosotros y para tener un Shell más dinámica haremos lo siguiente para mejorarla:
+
+•	Procedemos a buscar en la página de reverse Shell el código que vamos a ejecutar para obtener nuestra shell reverse con la opción Bash -i.
+
+•	Colocamos nuestra máquina en forma de escucha con el comando -->**nc -lvnp 9001**<--.
+
+•	En la sesión de meterpreter colocaremos los siguientes comandos -->**shel**<-- y luego -->**bash -i**<--.
+
+•	Por ultimo copiamos el código que nos indica en la página de reverse shell
+
+
+[![explotacion4.jpg](https://i.postimg.cc/P53BJb9v/explotacion4.jpg)](https://postimg.cc/PCD6FDtd)
+
+En nuestro equipo que levantamos el netcat y estamos en modo escucha se nos conectara, procedemos a ejecutar --> **Bash -i**<-- y luego -->**Ctrl+Z**<-- para suspender y que pase a segundo plano
+
+En otra ventana ejecutaremos el siguiente comando ** stty raw -echo; fg
+El comando stty raw -echo; fg en Unix/Linux se utiliza para cambiar la configuración del terminal y luego devolver el control a un proceso en primer plano. Aquí está el desglose de lo que hace cada parte:
+
+1.	stty raw -echo:
+
+Es un comando utilizado para cambiar y configurar las características del terminal.
+o	raw pone el terminal en modo raw (bruto), lo que significa que los caracteres se envían al proceso de inmediato sin ser procesados o modificados (sin buffering ni conversión de línea). Esto puede ser útil para aplicaciones que necesitan un control completo sobre la entrada del usuario.
+o	-echo desactiva el eco de la entrada del teclado, lo que significa que lo que escribas no se mostrará en la pantalla.
+
+2.	fg:
+
+Es un comando que se utiliza para traer al primer plano un proceso que está en segundo plano. Si tienes un proceso suspendido (por ejemplo, con Ctrl+Z) o ejecutándose en segundo plano, fg lo reanuda en el primer plano para que puedas interactuar con él.
+En conjunto, el comando stty raw -echo; fg se usa para configurar el terminal para recibir la entrada del usuario en modo bruto y sin mostrar lo que se escribe, y luego reanudar un proceso que estaba en segundo plano, permitiendo que interactúes con él. Esto podría ser útil en situaciones como la implementación de interfaces de usuario basadas en texto o en la depuración de programas que requieren una entrada precisa.
+
+Ya una vez explicado de que trata este comando, ejecutamos los siguientes comando que se puede apreciar en la imagen para terminar de configurar nuestra Shell reverse mas interactiva 
+
+
+[![explotacion5.jpg](https://i.postimg.cc/nzJzSt2J/explotacion5.jpg)](https://postimg.cc/d75wDpgH)
+
+
+buscamos información en la carpeta cfg
+
+[![explotacion6.jpg](https://i.postimg.cc/7PX69dTF/explotacion6.jpg)](https://postimg.cc/Z0B4KfHH)
+
+
+Ejecutamos un cat al archivo globals.php, conseguimos un usuario y contraseña 
+
+[![explotacion7.jpg](https://i.postimg.cc/QxtMymQH/explotacion7.jpg)](https://postimg.cc/5jh1HwkV)
+
+
+Nos conectamos mediante ssh con el usuario y contraseña obtenidos
+
+
+[![explotacion8.jpg](https://i.postimg.cc/v8SycsnZ/explotacion8.jpg)](https://postimg.cc/Sj83vHVB)
+
+
+Obtenemos el contenido de la bandera1 🚩
+
+[![bandera1.jpg](https://i.postimg.cc/gkCPHHN9/bandera1.jpg)](https://postimg.cc/Ln37Hfcv)
