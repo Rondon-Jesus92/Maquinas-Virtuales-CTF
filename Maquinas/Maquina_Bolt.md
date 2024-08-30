@@ -2,7 +2,7 @@
 
 Dificultad --> Fácil-Medio 
 
-Enlace de la maquina --> https://we.tl/t-AoP1Y9yq1w
+Enlace de la máquina --> https://we.tl/t-AoP1Y9yq1w
 
 Instrucciones --> Se necesita instalar VMawre Workstation para poder virtualizar la máquina
 
