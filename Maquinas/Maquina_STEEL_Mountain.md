@@ -189,7 +189,7 @@ AdvancedSystemCareService9
 powershell -c Get-Service
 
 
-### Entrando a la maquina destino utilizando msfvenom con shikata ga nai
+### Entrando a la máquina destino utilizando msfvenom con shikata ga nai
 
 Creamos el archivo Advanced2.exe con los siguientes parámetro: 
  
