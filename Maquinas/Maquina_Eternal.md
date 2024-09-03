@@ -1,4 +1,4 @@
-# Maquina Eternal
+# Máquina Eternal
 
 Dificultad --> Facil
 
