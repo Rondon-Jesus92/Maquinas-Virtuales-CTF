@@ -1,4 +1,4 @@
-# MAQUINA KIO
+# Máquina Kio
 
 Dificultad --> Easy
 
