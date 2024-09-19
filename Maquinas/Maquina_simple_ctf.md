@@ -129,7 +129,7 @@ Ahora buscamos la bandera root.txt 🚩 : W3ll d0n3. You made it!
 
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |user.txt | G00d j0b, keep up!      |
 |:-------:|:-----------------------:|
@@ -137,7 +137,7 @@ Ahora buscamos la bandera root.txt 🚩 : W3ll d0n3. You made it!
 
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 Acá las respuesta del cuestionario de TryHackMe 
 
