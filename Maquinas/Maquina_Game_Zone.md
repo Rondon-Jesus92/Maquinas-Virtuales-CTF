@@ -214,14 +214,14 @@ Y encontramos el contenido del archivo de texto root.txt = a4b945830144bdd71908d
 
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |user.txt | 649ac17b1480ac13ef1e4fa579dac95c |
 |:-------:|:--------------------------------:|
 |root.txt | a4b945830144bdd71908d12d902adeee |
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 Acá las respuesta del cuestionario de TryHackMe 
 
