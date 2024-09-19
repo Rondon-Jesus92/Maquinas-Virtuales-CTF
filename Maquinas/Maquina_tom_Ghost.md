@@ -1,6 +1,6 @@
 # Máquina Tom Ghost
 
-Dificultad --> Medio-Dificil 
+Dificultad --> Facil 
 
 Instrucciones --> **Para poder resolver esta máquina tienes que registrarte en la página de TryHackMe y buscarla por el nombre de Tom Ghost**
 
