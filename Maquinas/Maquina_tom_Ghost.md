@@ -154,6 +154,8 @@ THM{Z1P_1S_FAKE}
 
 ## 6.Extra 🚨
 
+Acá las respuesta del cuestionario de TryHackMe 
+
 * Compromise this machine and obtain user.txt
 
 THM{GhostCat_1s_so_cr4sy
