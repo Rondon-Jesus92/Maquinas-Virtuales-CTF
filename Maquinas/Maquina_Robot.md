@@ -214,7 +214,7 @@ Obtenemos el contenido de la bandera 3🚩: 6c6b1c7089af9c9bb7ac78f06c3c1685
 ![image](https://github.com/user-attachments/assets/da6e4e7f-8412-4de2-a79f-49c2ddfbc0ad)
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |Bandera 1 | b8a2bd7f70b405df8823bd4442892c6c |
 |:--------:|:--------------------------------:|
