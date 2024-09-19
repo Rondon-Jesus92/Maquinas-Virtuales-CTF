@@ -169,7 +169,7 @@ Vamos a la pagina https://gtfobins.github.io/gtfobins/zip/#sudo, buscamos zip y 
 [![bandera3.jpg](https://i.postimg.cc/gjQNRLyg/bandera3.jpg)](https://postimg.cc/FkbyXRBS)
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |Bandera 1 | aa7153d8889e1efd2bd57dab46e528e5 |
 |:--------:|:--------------------------------:|
@@ -177,7 +177,7 @@ Vamos a la pagina https://gtfobins.github.io/gtfobins/zip/#sudo, buscamos zip y 
 |Bandera 3 | 3c14d6f8ee4c66f8c4d9569b3101605a |
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 
 ### Persistencia
