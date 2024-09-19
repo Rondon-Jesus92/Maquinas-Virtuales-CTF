@@ -174,7 +174,7 @@ Escalamos como root ejecutando los comandos que se nos indica y vemos el conteni
 [![bandera2.jpg](https://i.postimg.cc/LsR5NpNM/bandera2.jpg)](https://postimg.cc/WdWs1xB9)
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |Bandera 1 | 19019f428f02d94f958b9f709732a51e |
 |:--------:|:--------------------------------:|
