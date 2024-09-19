@@ -187,14 +187,14 @@ Obtenemos el contenido del archivo root.txt: dff0f748678f280250f25a45b8046b4a
 ![image](https://github.com/user-attachments/assets/eee3366f-300d-47be-9d2a-39e3088898cc)
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |user.txt | 79007a09481963edf2e1321abd9ae2a0 |
 |:-------:|:--------------------------------:|
 |root.txt | dff0f748678f280250f25a45b8046b4a |
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 
 • ¿Cuántos puertos están abiertos? (TCP solamente)
