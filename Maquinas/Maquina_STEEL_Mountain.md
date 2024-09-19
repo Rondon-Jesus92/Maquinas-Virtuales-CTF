@@ -152,7 +152,7 @@ Una vez activado el servicio de AdvancedSystemCareService9 vemos que en nuestra 
 
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |user.txt | b04763b6fcf51fcd7c13abc7db4fd365 |
 |:-------:|:--------------------------------:|
@@ -160,7 +160,7 @@ Una vez activado el servicio de AdvancedSystemCareService9 vemos que en nuestra 
 
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 Acá las respuesta del cuestionario de TryHackMe 
 
