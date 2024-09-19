@@ -201,14 +201,14 @@ Ahora ya tenemos acceso como root y podemos ver el contenido de la bandera root 
 
 
 
-## 4.Banderas 🏁
+## 5.Banderas 🏁
 
 |user.txt | 02930d21a8eb009f6d26361b2d24a466 |
 |:-------:|:--------------------------------:|
 |root.txt | ce258cb16f47f1c66f0b0b77f4e0fb8d |
 
 
-## 5.Extra 🚨
+## 6.Extra 🚨
 
 Acá las respuesta del cuestionario de TryHackMe 
 
