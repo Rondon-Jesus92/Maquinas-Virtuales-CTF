@@ -1,4 +1,4 @@
-# Máquina Game Zone
+# Máquina Alfred
 
 Dificultad --> Medio-Dificil 
 
